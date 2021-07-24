@@ -7,3 +7,5 @@ Una vez que los productos estan en el carrito el usuario puede agregar mas media
 Si el carrito contiene productos y el usuario finaliza la compra le aparecera un mensaje de compra satisfactoria. De lo contrario, le avisaran que no hay productos en el carrito
 
 La idea de este proyecto es simular una compra y que sea lo mas comodo para el usuario pudiendo ver todos sus productos y actualizar la cantidad o eliminar productos todo desde una misma seccion. 
+
+El sitio es totalmente responsive.
