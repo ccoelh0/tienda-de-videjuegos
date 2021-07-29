@@ -10,12 +10,6 @@ $(document).ready(function () {
       mensaje: $("#msj").val(),
     };
     $.post(URL, obj, function (data) {
-      console.log(
-        "su informacion ha sido enviada ",
-        data.nombre,
-        ", su ID es:",
-        data.id
-      );
       $("#boton-enviar").hide();
       $("#mensajeEnviado").show("slow");
 

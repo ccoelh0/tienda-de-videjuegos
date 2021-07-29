@@ -17,7 +17,6 @@ $(document).ready(function () {
 
   for (let i = 0; i < btn.length; i++) {
     $(btn[i]).click((e) => {
-      console.log(btn[i]);
       verValores(e, i);
     });
   }
@@ -26,10 +25,8 @@ $(document).ready(function () {
     ev.preventDefault();
     let nodoTitulo = $(".card-title");
     let titulo = $(nodoTitulo[i]).text();
-    console.log($(nodoTitulo[i]).parent().children()[0]);
     let nodoPrecio = $(".precio");
     let precio = $(nodoPrecio[i]).text();
-    // let nodoImg = $(".card-img-top");
     let img = $(nodoTitulo[i]).parent().children()[0].src;
 
     const nuevoProducto = {
@@ -49,18 +46,15 @@ $(document).ready(function () {
         carrito[i].cantidad++;
         const inputValue = inputElemento[i];
         inputValue.value++;
-        console.log(carrito);
         carritoTotal();
         return null;
       }
     }
 
     carrito.push(nuevoProducto);
-    // console.log(carrito);
     crearCarrito();
   }
 
-  //funciona
   function crearCarrito() {
     const tablaBody = $(".tbody");
     tablaBody.html("");
@@ -99,7 +93,6 @@ $(document).ready(function () {
   }
 
   function removerItemCarrito(e) {
-    console.log("btn borrar");
     const botonBorrar = e.target;
     const tr = botonBorrar.closest(".itemCarrito");
     const titulo = tr.querySelector(".title").textContent;
@@ -140,7 +133,6 @@ $(document).ready(function () {
         for (let i = 0; i < carrito.length; i++) {
           if (carrito[i].titulo.trim() === titulo.trim()) {
             carrito.splice(i, 1);
-            //   consol e.log("eliminado");
           }
         }
         tr.remove();

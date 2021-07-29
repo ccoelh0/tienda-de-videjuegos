@@ -42,12 +42,12 @@ body {
 /*Nav*/
 
 .menu {
-  background-color: rgba(0, 8, 20, 0) !important;
+  background-color: #000814 !important;
   color: white;
   width: 100%;
   position: fixed;
   z-index: 12;
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
 }
 
 .nav-item {
@@ -73,11 +73,6 @@ body {
 .nav-item:hover::after {
   opacity: 1;
   transform: translateY(0);
-}
-
-.menu-scroll {
-  /*agregar en destop*/
-  background-color: #000814 !important;
 }
 
 .logo img {
@@ -568,7 +563,7 @@ textarea {
 
   #compraRealizada {
     /* padding: 5px; */
-    margin: 5px 15rem;
+    margin: 5px 10rem;
     background-color: rgb(79 162 24 / 78%);
     border: 2px solid rgb(79 162 24 / 78%);
     font-size: small;
@@ -614,6 +609,19 @@ textarea {
 
 @media only screen and (min-width: 1024px) {
   /* nav */
+
+  .menu {
+    background-color: rgba(0, 8, 20, 0) !important;
+    color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    padding: 10px 0px;
+  }
+
+  .menu-scroll {
+    background-color: #000814 !important;
+  }
 
   .navbar-toggler {
     width: 70px;
@@ -750,7 +758,7 @@ textarea {
 
   #compraRealizada {
     padding: 5px;
-    margin: 25px 19rem;
+    margin: 25px 17rem;
     font-size: 20px;
     background-color: rgb(79 162 24 / 78%);
     border: 2px solid rgb(79 162 24 / 78%);

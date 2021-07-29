@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  ////Nav scroll:
-
   const nav = document.getElementById("navegador");
 
   function scrollNav() {
@@ -21,7 +19,6 @@ $(document).ready(function () {
 
   for (let i = 0; i < btn.length; i++) {
     $(btn[i]).click((e) => {
-      console.log(btn[i]);
       productoAgregado(e, i);
     });
   }
@@ -29,12 +26,12 @@ $(document).ready(function () {
   function productoAgregado(e, i) {
     let btnNodo = $(".botonCarrito");
     let msjNodo = $(".confirmacionCarrito");
-    let btn = $(btnNodo[i]).hide();
-    let msj = $(msjNodo[i]).slideDown("slow");
+    $(btnNodo[i]).hide();
+    $(msjNodo[i]).slideDown("slow");
 
     setTimeout(() => {
-      let btn = $(btnNodo[i]).slideDown("slow");
-      let msj = $(msjNodo[i]).hide();
+      $(btnNodo[i]).slideDown("slow");
+      $(msjNodo[i]).hide();
     }, 3000);
   }
 });
